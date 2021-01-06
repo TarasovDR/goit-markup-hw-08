@@ -1,0 +1,35 @@
+.team {
+  background-color: var(--third-bg-color);
+
+  &__list {
+    display: flex;
+  }
+
+  &__list-item {
+    background-color: var(--primary-bg-color);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
+  &__list-item-desc {
+    padding: 30px;
+  }
+
+  &__list-item-name {
+    margin-bottom: 10px;
+    @include font(16px, 500, 19px);
+    text-align: center;
+  }
+
+  &__list-item-prof {
+    margin-bottom: 16px;
+    text-align: center;
+    @include font(16px, 400, 19px);
+    color: var(--secondary-text-color);
+  }
+}

@@ -1,0 +1,23 @@
+.logo {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  color: #000000;
+  font-family: var(--secondary-font);
+  @include font(26px, 700, 31px);
+
+  &--accent {
+    color: var(--accent-color);
+  }
+}
+
+.header__logo {
+  margin-right: 93px;
+}
+
+.footer__logo {
+  display: inline-block;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  color: var(--primary-bg-color);
+}

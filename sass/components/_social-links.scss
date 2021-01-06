@@ -1,0 +1,40 @@
+.social {
+  display: flex;
+  justify-content: space-between;
+
+  &__title {
+    display: inline-block;
+    margin-bottom: 20px;
+    color: var(--primary-bg-color);
+    text-transform: uppercase;
+  }
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    color: var(--icon-color);
+
+    transition: color 250ms var(--timing-function),
+      background-color 250ms var(--timing-function);
+
+    .footer & {
+      background-color: rgba(255, 255, 255, 0.1);
+      color: var(--primary-bg-color);
+    }
+
+    &:hover,
+    &:focus {
+      background-color: var(--accent-color);
+      color: var(--primary-bg-color);
+      cursor: pointer;
+    }
+  }
+
+  &__icon {
+    fill: currentColor;
+  }
+}
