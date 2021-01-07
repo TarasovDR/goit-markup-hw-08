@@ -3,15 +3,15 @@
     display: flex;
   }
 
-  &__list-item:not(:last-child) {
+  &__item:not(:last-child) {
     margin-right: 30px;
   }
 
-  &__list-item-wrap {
+  &__item-wrap {
     position: relative;
   }
 
-  &__list-item-desc {
+  &__item-desc {
     position: absolute;
     left: 0;
     bottom: 0;

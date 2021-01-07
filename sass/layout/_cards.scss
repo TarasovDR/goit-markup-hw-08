@@ -58,15 +58,15 @@
     border-bottom: 1px solid #eeeeee;
     border-left: 1px solid #eeeeee;
   }
-}
 
-.project-title {
-  margin-bottom: 4px;
-  @include font(18px, 700, 36px);
-  letter-spacing: 0.06em;
-}
+  &__title {
+    margin-bottom: 4px;
+    @include font(18px, 700, 36px);
+    letter-spacing: 0.06em;
+  }
 
-.project-subtitle {
-  @include font(16px, 400, 30px);
-  color: var(--secondary-text-color);
+  &__subtitle {
+    @include font(16px, 400, 30px);
+    color: var(--secondary-text-color);
+  }
 }
