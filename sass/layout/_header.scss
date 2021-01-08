@@ -17,13 +17,11 @@
   }
 
   & .container {
-    display: flex;
-    align-items: center;
+    @include flex(flex-start, center);
   }
 
   &__nav {
-    display: flex;
-    align-items: center;
+    @include flex(flex-start, center);
   }
 
   &__icon {
@@ -80,8 +78,7 @@
   }
 
   &__link {
-    display: flex;
-    align-items: center;
+    @include flex(flex-start, center);
     padding-top: 32px;
     padding-bottom: 32px;
     color: var(--secondary-text-color);

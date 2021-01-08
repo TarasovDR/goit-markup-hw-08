@@ -157,9 +157,7 @@
 
 .btn-close {
   position: absolute;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex(center, center);
   top: 8px;
   right: 8px;
   width: 30px;

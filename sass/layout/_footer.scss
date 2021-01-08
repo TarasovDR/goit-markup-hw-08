@@ -3,8 +3,7 @@
   background-color: var(--secondary-bg-color);
 
   & .container {
-    display: flex;
-    align-items: baseline;
+    @include flex(flex-start, baseline);
   }
 
   &__address {

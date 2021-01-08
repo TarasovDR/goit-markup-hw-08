@@ -1,6 +1,5 @@
 .social {
-  display: flex;
-  justify-content: space-between;
+  @include flex(space-between, stretch);
 
   &__title {
     display: inline-block;
@@ -10,9 +9,7 @@
   }
 
   &__link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex(center, center);
     width: 44px;
     height: 44px;
     border-radius: 50%;

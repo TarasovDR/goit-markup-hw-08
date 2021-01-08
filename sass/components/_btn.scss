@@ -25,9 +25,7 @@
       background-color 250ms var(--timing-function);
 
     &__list {
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      @include flex(center, center);
       margin-bottom: 50px;
     }
 
@@ -55,7 +53,6 @@
 }
 
 .subscribe__btn {
-  display: flex;
-  align-items: center;
+  @include flex(flex-start, center);
   padding: 10px 28px;
 }

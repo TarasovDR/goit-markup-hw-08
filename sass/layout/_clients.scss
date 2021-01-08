@@ -1,13 +1,10 @@
 .client {
   &__list {
-    display: flex;
-    justify-content: space-between;
+    @include flex(space-between, stretch);
   }
 
   &__link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex(center, center);
     width: 170px;
     height: 90px;
     border-radius: 4px;
