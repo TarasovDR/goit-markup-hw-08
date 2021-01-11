@@ -462,6 +462,10 @@ body {
 }
 
 @media screen and (min-width: 768px) {
+  .team__item {
+    -ms-flex-preferred-size: calc((100% - 1 * 30px) / 2);
+        flex-basis: calc((100% - 1 * 30px) / 2);
+  }
   .team__item:nth-child(2n + 1) {
     margin-right: 30px;
   }
@@ -471,6 +475,13 @@ body {
 }
 
 @media screen and (min-width: 1200px) {
+  .team__item {
+    -ms-flex-preferred-size: calc((100% - 3 * 30px) / 4);
+        flex-basis: calc((100% - 3 * 30px) / 4);
+  }
+  .team__item:nth-child(n) {
+    margin-bottom: 0;
+  }
   .team__item:not(:last-child) {
     margin-right: 30px;
   }
@@ -483,14 +494,12 @@ body {
 
 @media screen and (min-width: 768px) {
   .team__item-photo {
-    width: 354px;
     height: 374px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .team__item-photo {
-    width: 270px;
     height: 260px;
   }
 }
