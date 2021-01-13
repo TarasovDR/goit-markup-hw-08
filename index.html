@@ -24,7 +24,7 @@
           >
           <button
             type="button"
-            class="menu-button is-open"
+            class="menu-button"
             aria-expanded="false"
             aria-controls="menu-container"
             data-menu-button
@@ -34,14 +34,17 @@
               height="40"
               aria-label="переключатель мобильного меню"
             >
-              <use class="icon-menu" href="./icons/sprite.svg#menu"></use>
               <use
                 class="icon-menu-close"
-                href="./icons/sprite.svg#menu-close"
+                href="./icons/sprite.svg#close-menu"
               ></use>
+              <use class="icon-menu" href="./icons/sprite.svg#menu"></use>
             </svg>
           </button>
-          <!-- <div class="menu-container" id="menu-container"></div> -->
+          <div class="menu-container" id="menu-container" data-menu>
+            <div class="navigation"></div>
+            <div class="contacts"></div>
+          </div>
 
           <ul class="site-nav">
             <li class="site-nav__item">
@@ -769,7 +772,7 @@
       </div>
     </div>
 
-    <script src="./js/modal.js"></script>
     <script src="./js/menu.js"></script>
+    <script src="./js/modal.js"></script>
   </body>
 </html>

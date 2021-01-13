@@ -2,18 +2,27 @@
   padding: 60px 0;
   background-color: var(--secondary-bg-color);
 
-  & .container {
-    @include flex(flex-start, baseline);
-  }
-
   &__address {
     width: 231px;
-    margin-right: 70px;
+    margin: 0 auto;
+    text-align: center;
+
+    @media screen and (min-width: $desktop) {
+      margin-right: 70px;
+      text-align: start;
+    }
   }
 
   &__social {
     width: 206px;
-    margin-right: 93px;
+    margin: 0 auto 60px;
+    text-align: center;
+
+    @media screen and (min-width: $desktop) {
+      margin-right: 93px;
+      margin-bottom: 0;
+      text-align: start;
+    }
   }
 }
 
@@ -21,6 +30,7 @@
   font-style: inherit;
   @include font(14px, 400, 24px);
   letter-spacing: 0.03em;
+  margin-bottom: 60px;
 
   &__item:not(:last-child) {
     margin-bottom: 9px;
@@ -36,6 +46,10 @@
   &__link:focus {
     color: var(--accent-color);
   }
+
+  @media screen and (min-width: $desktop) {
+    margin-bottom: 0;
+  }
 }
 
 .contact__link {
@@ -50,14 +64,22 @@
 }
 
 .subscribe {
-  &__form {
-    display: flex;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: $desktop) {
+    text-align: start;
+
+    &__form {
+      display: flex;
+    }
   }
 
   &__input {
-    width: 358px;
+    width: 450px;
     padding: 15px 16px;
-    margin-right: 12px;
+    margin-bottom: 20px;
     border-radius: 4px;
     color: rgba(255, 255, 255, 0.6);
     background-color: var(--secondary-bg-color);
@@ -72,9 +94,16 @@
     &:focus {
       border: 1px solid var(--accent-color);
     }
+
+    @media screen and (min-width: $desktop) {
+      width: 358px;
+      margin-right: 12px;
+      margin-bottom: 0;
+    }
   }
 
   &__btn {
+    margin: 0 auto;
     & .send-icon {
       margin-left: 10px;
       fill: var(--primary-bg-color);

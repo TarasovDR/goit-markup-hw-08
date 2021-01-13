@@ -3,15 +3,24 @@
   padding-bottom: 25px;
   color: #000000;
   font-family: var(--secondary-font);
-  @include font(26px, 700, 31px);
+  @include font(24px, 700, 28px);
+  letter-spacing: 0.03em;
 
   &--accent {
     color: var(--accent-color);
+  }
+
+  @media screen and (min-width: $desktop) {
+    @include font(26px, 700, 31px);
   }
 }
 
 .header__logo {
   @media screen and (min-width: $tablet) {
+    margin-right: 88px;
+  }
+
+  @media screen and (min-width: $desktop) {
     margin-right: 93px;
   }
 }

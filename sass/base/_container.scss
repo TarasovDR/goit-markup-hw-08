@@ -1,5 +1,5 @@
 .container {
-  max-width: 1200px;
+  // max-width: 1200px;
   min-width: 480px;
   padding: 0 15px;
 
@@ -14,9 +14,18 @@
 
   @media screen and (min-width: $tablet) {
     width: 768px;
+
+    .footer & {
+      @include flex(flex-start, baseline);
+      flex-wrap: wrap;
+    }
   }
 
   @media screen and (min-width: $desktop) {
     width: 1200px;
+
+    .footer & {
+      flex-wrap: nowrap;
+    }
   }
 }
