@@ -92,7 +92,8 @@
     }
 
     &:focus {
-      border: 1px solid var(--accent-color);
+      outline: none;
+      border-color: var(--accent-color);
     }
 
     @media screen and (min-width: $desktop) {

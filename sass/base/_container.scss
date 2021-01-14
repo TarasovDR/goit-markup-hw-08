@@ -1,11 +1,9 @@
 .container {
-  // max-width: 1200px;
-  min-width: 480px;
   padding: 0 15px;
+  margin: 0 auto;
 
   @media screen and (min-width: $mobile) {
     width: 480px;
-    margin: 0 auto;
 
     .works & {
       display: none;
@@ -23,6 +21,10 @@
 
   @media screen and (min-width: $desktop) {
     width: 1200px;
+
+    .works & {
+      display: block;
+    }
 
     .footer & {
       flex-wrap: nowrap;
