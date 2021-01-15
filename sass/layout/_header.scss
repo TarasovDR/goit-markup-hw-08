@@ -18,7 +18,7 @@
   }
 
   &__nav {
-    @include flex(flex-start, center);
+    @include flex(space-between, center);
   }
 
   &__icon {
@@ -28,6 +28,43 @@
 }
 
 .site-nav {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+    &__item:not(:last-child) {
+      margin-bottom: 40px;
+    }
+    @include font(18px, 700, 21px);
+  }
+
+  &__link {
+    display: inline-block;
+    // padding-bottom: -12px;
+
+    transition: color 250ms var(--timing-function);
+
+    &--active {
+      position: relative;
+      color: var(--accent-color);
+      padding-bottom: 12px;
+    }
+
+    &--active::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: 4px;
+      border-radius: 2px;
+      background-color: var(--accent-color);
+    }
+
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+
   @media screen and (min-width: $tablet) {
     display: flex;
     letter-spacing: 0.02em;
@@ -40,34 +77,15 @@
       display: block;
       padding-top: 32px;
       padding-bottom: 32px;
-
-      transition: color 250ms var(--timing-function);
-
-      &--active {
-        position: relative;
-        color: var(--accent-color);
-      }
-
-      &--active::after {
-        content: "";
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 4px;
-        border-radius: 2px;
-        background-color: var(--accent-color);
-      }
-
-      &:hover,
-      &:focus {
-        color: var(--accent-color);
-      }
     }
   }
 }
 
 .auth-nav {
+  // @media screen and (max-width: 767px) {
+  //   align-items: center;
+  // }
+
   @media screen and (min-width: $tablet) {
     display: block;
     margin-left: auto;
@@ -91,12 +109,17 @@
   }
 
   &__link {
-    @include flex(flex-start, center);
     color: var(--secondary-text-color);
-
     transition: color 250ms var(--timing-function);
 
+    @media screen and (max-width: 767px) {
+      @include flex(center, center);
+      margin-bottom: 16px;
+      @include font(18px, 700, 21px);
+    }
+
     @media screen and (min-width: $desktop) {
+      @include flex(flex-start, center);
       padding-top: 32px;
       padding-bottom: 32px;
     }
