@@ -1,5 +1,7 @@
 .social {
   @include flex(space-between, stretch);
+  width: 206px;
+  margin: 0 auto;
 
   &__title {
     display: inline-block;
@@ -34,4 +36,7 @@
   &__icon {
     fill: currentColor;
   }
+
+  // .team & {
+  // }
 }
