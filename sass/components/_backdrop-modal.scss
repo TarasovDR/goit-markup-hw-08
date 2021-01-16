@@ -25,6 +25,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  width: 100%;
   max-width: 450px;
   padding: 40px;
   border-radius: 4px;
@@ -141,7 +142,7 @@
 
   .modal__form-policy-text {
     position: relative;
-    padding-left: 36px;
+    padding-left: 24px;
     margin-bottom: 30px;
     @include font(12px, 400, 14px);
     letter-spacing: 0.03em;
@@ -151,7 +152,7 @@
       display: inline-block;
       position: absolute;
       top: 50%;
-      left: 12px;
+      left: 0;
       transform: translateY(-50%);
       content: "";
       width: 16px;
@@ -165,6 +166,14 @@
 
     @media screen and (min-width: $tablet) {
       @include font(14px, 400, 24px);
+    }
+
+    @media screen and (min-width: $desktop) {
+      padding-left: 36px;
+
+      ::before {
+        left: 12px;
+      }
     }
   }
 }

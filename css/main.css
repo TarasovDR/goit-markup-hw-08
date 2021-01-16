@@ -1053,6 +1053,7 @@ body.modal-open {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  width: 100%;
   max-width: 450px;
   padding: 40px;
   border-radius: 4px;
@@ -1201,7 +1202,7 @@ body.modal-open {
 
 .modal .modal__form-policy-text {
   position: relative;
-  padding-left: 36px;
+  padding-left: 24px;
   margin-bottom: 30px;
   font-size: 12px;
   font-weight: 400;
@@ -1214,7 +1215,7 @@ body.modal-open {
   display: inline-block;
   position: absolute;
   top: 50%;
-  left: 12px;
+  left: 0;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
   content: "";
@@ -1232,6 +1233,15 @@ body.modal-open {
     font-size: 14px;
     font-weight: 400;
     line-height: 24px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .modal .modal__form-policy-text {
+    padding-left: 36px;
+  }
+  .modal .modal__form-policy-text ::before {
+    left: 12px;
   }
 }
 
