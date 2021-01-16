@@ -140,7 +140,7 @@
     }
   }
 
-  .modal__form-policy-text {
+  &__form-policy-text {
     position: relative;
     padding-left: 24px;
     margin-bottom: 30px;
@@ -162,18 +162,19 @@
       border-radius: 2px;
 
       transition: border 250ms var(--timing-function);
-    }
 
-    @media screen and (min-width: $tablet) {
-      @include font(14px, 400, 24px);
+      @media screen and (min-width: $desktop) {
+        left: 12px;
+      }
+
+      @media screen and (min-width: $tablet) {
+        @include font(14px, 400, 24px);
+      }
     }
 
     @media screen and (min-width: $desktop) {
       padding-left: 36px;
-
-      ::before {
-        left: 12px;
-      }
+      @include font(14px, 400, 24px);
     }
   }
 }
