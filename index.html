@@ -16,7 +16,7 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <!-- <header class="header">
+    <header class="header">
       <div class="container">
         <nav class="header__nav">
           <a href="./index.html" lang="en" class="logo header__logo">
@@ -90,10 +90,10 @@
           </div>
         </nav>
       </div>
-    </header> -->
+    </header>
 
     <main>
-      <!-- <section class="section hero">
+      <section class="section hero">
         <div class="container">
           <h1 class="hero__title">
             Эффективные решения<br />
@@ -101,9 +101,9 @@
           </h1>
           <button class="btn" data-modal-open>Заказать услугу</button>
         </div>
-      </section> -->
+      </section>
 
-      <!-- <section class="section features">
+      <section class="section features">
         <div class="container">
           <h2 class="visually-hidden">Особенности</h2>
           <ul class="feature__list">
@@ -177,20 +177,32 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
-      <!-- <section class="section works">
+      <section class="section works">
         <div class="container">
           <h2 class="section__title">Чем мы занимаемся</h2>
           <ul class="work__list">
             <li class="work__item">
               <div class="work__item-wrap">
-                <img
-                  src="./images/desktop.jpg"
-                  alt="десктоп"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/works/desktop-img.webp    1x,
+                      ./images/works/desktop-img@2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/works/desktop-img.jpg    1x,
+                      ./images/works/desktop-img@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img src="./images/works/desktop-img.jpg" alt="десктоп" />
+                </picture>
                 <div class="work__item-desc">
                   <p class="work-list__text">Десктопные приложения</p>
                 </div>
@@ -198,12 +210,24 @@
             </li>
             <li class="work__item">
               <div class="work__item-wrap">
-                <img
-                  src="./images/phone.jpg"
-                  alt="телефон"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/works/phone-img.webp    1x,
+                      ./images/works/phone-img@2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/works/phone-img.jpg    1x,
+                      ./images/works/phone-img@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img src="./images/works/phone-img.jpg" alt="телефон" />
+                </picture>
                 <div class="work__item-desc">
                   <p class="work-list__text">Мобильные приложения</p>
                 </div>
@@ -211,12 +235,24 @@
             </li>
             <li class="work__item">
               <div class="work__item-wrap">
-                <img
-                  src="./images/tablet.jpg"
-                  alt="планшет"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/works/tablet-img.webp    1x,
+                      ./images/works/tablet-img@2x.webp 2x
+                    "
+                    media="(min-width: 1200px)"
+                    type="image/webp"
+                  />
+                  <source
+                    srcset="
+                      ./images/works/tablet-img.jpg    1x,
+                      ./images/works/tablet-img@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img src="./images/works/tablet-img.jpg" alt="планшет" />
+                </picture>
                 <div class="work__item-desc">
                   <p class="work-list__text">Дизайнерские решения</p>
                 </div>
@@ -224,7 +260,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <section class="section team">
         <div class="container">
@@ -666,7 +702,7 @@
         </div>
       </section>
 
-      <!-- <section class="section clients">
+      <section class="section clients">
         <div class="container">
           <h2 class="section__title">Постоянные клиенты</h2>
           <ul class="client__list">
@@ -746,10 +782,10 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
 
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container">
         <div class="footer__address">
           <a href="./index.html" class="logo footer__logo"
@@ -857,9 +893,9 @@
           </form>
         </div>
       </div>
-    </footer> -->
+    </footer>
 
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="btn-close" data-modal-close>
           <svg
@@ -948,7 +984,7 @@
           </form>
         </div>
       </div>
-    </div> -->
+    </div>
 
     <script src="./js/menu.js"></script>
     <script src="./js/modal.js"></script>
