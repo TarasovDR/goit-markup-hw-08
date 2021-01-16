@@ -1,9 +1,10 @@
 .container {
+  width: 100%;
   padding: 0 15px;
   margin: 0 auto;
 
   @media screen and (min-width: $mobile) {
-    width: 480px;
+    max-width: 480px;
 
     .works & {
       display: none;
@@ -11,7 +12,7 @@
   }
 
   @media screen and (min-width: $tablet) {
-    width: 768px;
+    max-width: 768px;
 
     .footer & {
       @include flex(flex-start, baseline);
@@ -20,7 +21,7 @@
   }
 
   @media screen and (min-width: $desktop) {
-    width: 1200px;
+    max-width: 1200px;
 
     .works & {
       display: block;

@@ -85,13 +85,14 @@ body.modal-open {
 }
 
 .container {
+  width: 100%;
   padding: 0 15px;
   margin: 0 auto;
 }
 
 @media screen and (min-width: 480px) {
   .container {
-    width: 480px;
+    max-width: 480px;
   }
   .works .container {
     display: none;
@@ -100,7 +101,7 @@ body.modal-open {
 
 @media screen and (min-width: 768px) {
   .container {
-    width: 768px;
+    max-width: 768px;
   }
   .footer .container {
     display: -webkit-box;
@@ -119,7 +120,7 @@ body.modal-open {
 
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200px;
+    max-width: 1200px;
   }
   .works .container {
     display: block;
@@ -230,9 +231,6 @@ body.modal-open {
     text-align: start;
     letter-spacing: 0.02em;
   }
-}
-
-@media screen and (min-width: 768px) {
   .auth-nav__item:not(:last-child) {
     margin-bottom: 10px;
   }
@@ -274,7 +272,7 @@ body.modal-open {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
   .auth-nav__link {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -285,6 +283,11 @@ body.modal-open {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .auth-nav__link {
     padding-top: 32px;
     padding-bottom: 32px;
   }

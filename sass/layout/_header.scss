@@ -91,12 +91,13 @@
     margin-left: auto;
     text-align: start;
     letter-spacing: 0.02em;
-  }
 
-  @media screen and (min-width: $tablet) {
     &__item:not(:last-child) {
       margin-bottom: 10px;
     }
+  }
+
+  @media screen and (min-width: $tablet) {
   }
 
   @media screen and (min-width: $desktop) {
@@ -118,8 +119,11 @@
       @include font(18px, 700, 21px);
     }
 
-    @media screen and (min-width: $desktop) {
+    @media screen and (min-width: $tablet) {
       @include flex(flex-start, center);
+    }
+
+    @media screen and (min-width: $desktop) {
       padding-top: 32px;
       padding-bottom: 32px;
     }
