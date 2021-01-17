@@ -163,18 +163,23 @@
 
       transition: border 250ms var(--timing-function);
 
-      @media screen and (min-width: $desktop) {
-        left: 12px;
-      }
+      // @media screen and (min-width: $desktop) {
+      // }
 
       @media screen and (min-width: $tablet) {
         @include font(14px, 400, 24px);
       }
     }
+  }
+}
 
-    @media screen and (min-width: $desktop) {
-      padding-left: 36px;
-      @include font(14px, 400, 24px);
+@media screen and (min-width: $desktop) {
+  .modal__form-policy-text {
+    padding-left: 36px;
+    @include font(14px, 400, 24px);
+
+    &::before {
+      left: 12px;
     }
   }
 }
