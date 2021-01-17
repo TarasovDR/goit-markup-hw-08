@@ -163,9 +163,6 @@
 
       transition: border 250ms var(--timing-function);
 
-      // @media screen and (min-width: $desktop) {
-      // }
-
       @media screen and (min-width: $tablet) {
         @include font(14px, 400, 24px);
       }
