@@ -41,7 +41,7 @@
   @media screen and (min-width: $tablet) {
     max-width: 528px;
     width: 100%;
-    min-height: 581px;
+    // min-height: 581px;
 
     .backdrop.is-hidden & {
       transform: translate(-50%, -200%);
