@@ -97,6 +97,10 @@
       border-color: var(--accent-color);
     }
 
+    @media screen and (min-width: $tablet) {
+      width: 450px;
+    }
+
     @media screen and (min-width: $desktop) {
       width: 358px;
       margin-right: 12px;
