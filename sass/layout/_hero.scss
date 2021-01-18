@@ -2,6 +2,7 @@
   background-color: var(--secondary-bg-color);
 
   &.section {
+    max-width: 1600px;
     margin: 0 auto;
     text-align: center;
     background-size: cover;
