@@ -90,9 +90,9 @@ body.modal-open {
   margin: 0 auto;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 320px) {
   .container {
-    max-width: 320px;
+    max-width: 480px;
   }
   .works .container {
     display: none;
