@@ -92,7 +92,7 @@ body.modal-open {
 
 @media screen and (min-width: 480px) {
   .container {
-    max-width: 480px;
+    max-width: 320px;
   }
   .works .container {
     display: none;

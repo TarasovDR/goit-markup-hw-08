@@ -4,7 +4,7 @@
   margin: 0 auto;
 
   @media screen and (min-width: $mobile) {
-    max-width: 480px;
+    max-width: 320px;
 
     .works & {
       display: none;
