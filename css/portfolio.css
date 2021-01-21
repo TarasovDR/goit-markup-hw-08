@@ -141,6 +141,12 @@ body.modal-open {
   z-index: 1;
 }
 
+@media screen and (max-width: 767px) {
+  .header {
+    height: 60px;
+  }
+}
+
 .header::before {
   position: absolute;
   content: "";
@@ -309,6 +315,10 @@ body.modal-open {
 
 .card__item:not(:last-child) {
   margin-bottom: 30px;
+}
+
+.card__item:first-child .card__content {
+  padding-bottom: 56px;
 }
 
 @media screen and (min-width: 768px) {
@@ -585,6 +595,13 @@ body.modal-open {
 
 .logo--accent {
   color: var(--accent-color);
+}
+
+@media screen and (max-width: 767px) {
+  .logo {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
 }
 
 @media screen and (min-width: 1200px) {

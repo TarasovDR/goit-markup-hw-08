@@ -7,6 +7,10 @@
   background-color: var(--primary-bg-color);
   z-index: 1;
 
+  @media screen and (max-width: 767px) {
+    height: 60px;
+  }
+
   &::before {
     position: absolute;
     content: "";
@@ -38,7 +42,6 @@
 
   &__link {
     display: inline-block;
-    // padding-bottom: -12px;
 
     transition: color 250ms var(--timing-function);
 
