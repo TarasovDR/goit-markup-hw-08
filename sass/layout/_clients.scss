@@ -30,6 +30,7 @@
     @media screen and (min-width: $desktop) {
       flex-basis: calc((100% - 5 * 30px) / 6);
       margin-bottom: 0;
+      
       &:not(:last-child) {
         margin-right: 30px;
       }

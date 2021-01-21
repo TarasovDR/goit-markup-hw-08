@@ -17,6 +17,7 @@
 
     @media screen and (min-width: $tablet) {
       flex-basis: calc((100% - 1 * 30px) / 2);
+      
       &:nth-child(2n + 1) {
         margin-right: 30px;
       }
@@ -67,10 +68,10 @@
     height: 100%;
     padding: 77px 24px;
 
-    @include font(18px, 400, 28px);
-    letter-spacing: 0.03em;
     color: var(--primary-bg-color);
     background-color: rgba(33, 150, 243, 0.9);
+    @include font(18px, 400, 28px);
+    letter-spacing: 0.03em;
 
     opacity: 0;
     transform: translateY(100%);

@@ -24,6 +24,7 @@
 
     @media screen and (min-width: $desktop) {
       flex-basis: calc((100% - 3 * 30px) / 4);
+
       &:nth-child(n) {
         margin-bottom: 0;
       }

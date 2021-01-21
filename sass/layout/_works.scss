@@ -20,11 +20,11 @@
       width: 100%;
       height: 70px;
       padding: 27px 82px;
-      background-color: var(--secondary-bg-color-opas);
       color: var(--primary-bg-color);
-      text-align: center;
+      background-color: var(--secondary-bg-color-opas);
       @include font(14px, 700, 16px);
       text-transform: uppercase;
+      text-align: center;
     }
   }
 }
